@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FProfile">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/Primary3">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tentang Kami"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="20dp"/>
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tentang_kami"
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/white"
+            android:textAlignment="textStart"
+            android:paddingHorizontal="12dp"
+            android:layout_marginHorizontal="20dp"
+            android:paddingEnd="16dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Developer"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            android:layout_marginHorizontal="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yuzzar Alpriatna Malik"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"/>
+
+        <TextView
+            android:id="@+id/card_profile_separator"
+            android:layout_height="wrap_content"
+            android:layout_width="290dp"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginVertical="8dp"
+            android:background="@color/white"
+            android:textSize="1dp"
+            app:layout_constraintTop_toBottomOf="@id/container_image_profile"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="yuzzar.al@mhs.itenas.ac.id"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+
+            android:layout_marginHorizontal="20dp"/>
+
+        <TextView
+            android:id="@+id/card_profile_separator1"
+            android:layout_height="wrap_content"
+            android:layout_width="290dp"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginVertical="8dp"
+            android:background="@color/white"
+            android:textSize="1dp"
+            app:layout_constraintTop_toBottomOf="@id/container_image_profile"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pemrograman IoT"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginHorizontal="20dp"/>
+
+        <TextView
+            android:id="@+id/card_profile_separator2"
+            android:layout_height="wrap_content"
+            android:layout_width="290dp"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginVertical="8dp"
+            android:background="@color/white"
+            android:textSize="1dp"
+            app:layout_constraintTop_toBottomOf="@id/container_image_profile"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="152021061"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:layout_marginHorizontal="20dp"/>
+
+        <TextView
+            android:id="@+id/card_profile_separator3"
+            android:layout_height="wrap_content"
+            android:layout_width="290dp"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginVertical="8dp"
+            android:background="@color/white"
+            android:textSize="1dp"
+            app:layout_constraintTop_toBottomOf="@id/container_image_profile"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>
+

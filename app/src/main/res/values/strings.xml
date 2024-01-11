@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">app_projectIOT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tentang_kami">
+    Water Tank hadir untuk memantau tangki air dengan teknologi IoT. Melalui pemantauan real-time volume dan suhu air, aplikasi ini membantu pengguna mengelola konsumsi air secara efisien. Dengan analisis data yang canggih, Water Tank memberikan pandangan yang komprehensif untuk mengoptimalkan penggunaan sumber daya air. Antarmuka intuitifnya membuat pengelolaan sumber daya air menjadi lebih mudah.
+</string>
+
+</resources>

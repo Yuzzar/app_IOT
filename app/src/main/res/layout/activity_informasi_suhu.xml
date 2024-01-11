@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background3"
+    android:layout_height="match_parent"
+    tools:context=".informasi_suhu">
+    <TextView
+        android:id="@+id/tv_f_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Informasi Suhu"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        style="@style/TextAppearance.MaterialComponents.Headline1"
+        android:padding="30dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="405dp"
+        android:layout_height="150dp"
+        android:scaleType="center"
+        android:src="@drawable/temprature1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_f_home"
+        />
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:id="@+id/col_info1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/col_info2"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <LinearLayout
+                style="@style/breakInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progress_suhu_hari_ini"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:max="100"
+                    android:min="0"
+                    android:progress="40"
+                    android:progressTint="@color/white"
+                    android:progressBackgroundTint="@color/Primary2"
+                    android:rotation="-90" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/textSubTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Suhu hari ini" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/suhu_hari_ini"
+                        style="@style/textInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="40 "
+                        android:text="40 "/>
+
+                    <TextView
+                        style="@style/textInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="° "
+                        android:text="° "/>
+                </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progress_suhu_terendah"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:max="50"
+                    android:min="0"
+                    android:progress="21"
+                    android:progressTint="@color/white"
+                    android:progressBackgroundTint="@color/Primary2"
+                    android:rotation="-90" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/textSubTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Suhu Terendah" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/suhu_terendah"
+                        style="@style/textInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="20"
+                        android:text="20 "/>
+
+                    <TextView
+                        style="@style/textInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="°"
+                        android:text="° "/>
+                </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/col_info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+
+            <LinearLayout
+                style="@style/breakInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progress_suhu_tertinggi"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:max="100"
+                    android:min="-10"
+                    android:progress="40"
+                    android:progressTint="@color/white"
+
+                    android:progressBackgroundTint="@color/Primary2"
+                    android:rotation="-90" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/textSubTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="Suhu Tertinggi" />
+
+                    <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/suhu_tertinggi"
+                        style="@style/textInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="50"
+
+                        android:text="50 "/>
+
+                    <TextView
+                        style="@style/textInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="°"
+                        android:text="° "/>
+
+                </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progress_suhu_tertinggi_harian"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:max="100"
+                    android:min="1"
+                    android:progress="40"
+                    android:progressTint="@color/white"
+                    android:progressBackgroundTint="@color/Primary2"
+                    android:rotation="-90" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        style="@style/textSubTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="suhu tetinggi (minggu ini)" />
+
+                    <TextView
+                        android:id="@+id/suhu_tertinggi_harian"
+                        style="@style/textInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Rabu" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/to_register"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_2"
+        android:text="Go To Dashboard"
+        android:textColor="@color/Primary2"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

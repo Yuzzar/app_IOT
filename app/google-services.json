@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "698665786978",
+    "firebase_url": "https://apputs-db544-default-rtdb.firebaseio.com",
+    "project_id": "apputs-db544",
+    "storage_bucket": "apputs-db544.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698665786978:android:a8a30d478e32ecd707bb3b",
+        "android_client_info": {
+          "package_name": "com.example.app_projectiot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDclWi8t5ec3A7_Hw07hEHcYeOu7hNov7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698665786978:android:d871034484878cdd07bb3b",
+        "android_client_info": {
+          "package_name": "com.example.apputs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDclWi8t5ec3A7_Hw07hEHcYeOu7hNov7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
